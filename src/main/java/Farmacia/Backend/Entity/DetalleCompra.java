@@ -3,6 +3,7 @@ package Farmacia.Backend.Entity;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name ="detalle_compra")
 public class DetalleCompra {
 
     @Id

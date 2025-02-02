@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@Table(name ="venta")
 public class Venta {
 
     @Id
@@ -15,10 +16,10 @@ public class Venta {
     double total;
 
     @ManyToOne
-    @JoinColumn(name = "id_cliente",nullable = false)
+    @JoinColumn(name = "cliente",nullable = false)
     private Cliente cliente;
 
-    @OneToMany(mappedBy = "Venta")
+    @OneToMany(mappedBy = "venta")
     private List<DetalleVenta> detalles;
 
 

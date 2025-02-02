@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
 @Entity
+@Table(name = "medicamento")
 public class Medicamento {
 
     @Id
